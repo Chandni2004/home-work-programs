@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int prev=0,next=1,sum,n;
+    printf("Enter the value of N: ");
+    scanf("%d",&n);
+    while(prev<=n)
+    {
+        printf("%d ",prev);
+        sum = prev + next;
+        next = prev;
+        prev = sum;
+    }
+}
