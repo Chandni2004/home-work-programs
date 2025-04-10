@@ -66,7 +66,7 @@ void MagicNumber(int *num) {
         printf("%d is not a Magic Number\n", *num);
 }
 
-// 8. Leap year with conditional operators
+// 8. Leap year with operators
 void LeapLogical(int *year) {
     ((*year % 4 == 0 && *year % 100 != 0) || (*year % 400 == 0)) ?
         printf("%d is Leap Year (Logical)\n", *year) :
