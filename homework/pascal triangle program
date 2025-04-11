@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int i,j,n,b;
+    printf("enter the number of rows: ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        b=1;
+        for(j=0;j<=i;j++)
+        {
+            printf("%d ",b);
+            b=b*(i-j)/(j+1);
+        }
+        printf("\n");
+    }
+    return 0;
+}
