@@ -4,11 +4,11 @@ int main()
     int prev=0,next=1,sum,n;
     printf("Enter the value of N: ");
     scanf("%d",&n);
-    while(prev<=n)
+    while(prev<=n) //0<=4 1<=4 2<=4 3<=4 4<=4
     {
-        printf("%d ",prev);
-        sum = prev + next;
-        next = prev;
-        prev = sum;
+        printf("%d ",prev);// 0 1 1 2 3
+        sum = prev + next; // 0+1=1 1+0=1 1+1=2 2+1=3 3+2=5
+        next = prev;// 0 1 1 2 2
+        prev = sum;// 1 1 2 3 5
     }
 }
