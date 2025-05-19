@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    int n, rev, a, oct, cnt;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    rev=0;
+    while(n>0)
+    {
+        a=n%10;
+        rev=rev*10+a;
+        n=n/10;
+    }
+    n=rev;
+    cnt=oct=0;
+    while(n>0)
+    {
+        a=n%8;
+        n=n/8;
+        oct=oct+a*pow(10,cnt);
+        cnt++;
+    }
+    printf("The octal equivalent of reversed number %d is %d",rev,oct);
+ }
