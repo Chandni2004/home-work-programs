@@ -8,13 +8,19 @@ int main()
     for(i=n;i>=1;i--)
     {
         for(j=1;j<=i;j++)
-        printf("%c",j+97-1);
+        {
+            printf("%c",j+97-1);
+        }
         for(k=1;k<=2*(n-i)-1;k++)
-        printf(" ");
+        {
+            printf(" ");
+        }
         for(l=i;l>=1;l--)
         {
             if(l==n)
-            continue;   
+            {
+                continue;
+            }
             printf("%c",l+97-1);
         }
         printf("\n");
