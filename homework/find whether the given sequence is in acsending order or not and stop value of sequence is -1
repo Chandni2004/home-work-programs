@@ -14,8 +14,10 @@ int main()
         printf("Enter number %d: ",i++);
         scanf("%d",&n);
         if(n<prev&&n!=-1)
-        flag=false;
-        prev=n;
+        {
+            flag=false;
+            prev=n;
+        }
     }
     if(flag==false)
         printf("Not in ascending order");
