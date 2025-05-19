@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    enum {false,true};
+    int prev,n,flag=true,i;
+    printf("Enter number 1: ");
+    scanf("%d",&n);
+    prev = n;
+    i=2;
+    while(n!=-1)
+    {
+        printf("Enter number %d: ",i++);
+        scanf("%d",&n);
+        if(n<prev&&n!=-1)
+        flag=false;
+        prev=n;
+    }
+    if(flag==false)
+        printf("Not in ascending order");
+    else
+        printf("In ascending order");
+ }
